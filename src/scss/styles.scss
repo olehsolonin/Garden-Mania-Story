@@ -1,11 +1,11 @@
 // @import './common/reset';
-@import './header.scss';
-@import './home.scss';
-@import './feature-keys.scss';
-@import './about-us.scss';
-@import './gallery.scss';
-@import './user-reviews.scss';
-@import './footer.scss';
+@import url('./header.scss');
+@import url('./home.scss');
+@import url('./feature-keys.scss');
+@import url('./about-us.scss');
+@import url('./gallery.scss');
+@import url('./user-reviews.scss');
+@import url('./footer.scss');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -21,4 +21,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 16px 0 16px;
+  margin: 0 auto;
 }
