@@ -1,0 +1,50 @@
+.home-block {
+  height: 726px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.home-img-wrap {
+  max-width: 205px;
+  height: 416px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+
+.home-img {
+  max-width: 100%;
+}
+
+.frame-wrap {
+  height: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.garden-text {
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-garden-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

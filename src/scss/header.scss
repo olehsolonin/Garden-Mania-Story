@@ -4,6 +4,11 @@
   background-color: #f8f8f8;
 }
 
+.header-block {
+  display: flex;
+  gap: 36px;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
