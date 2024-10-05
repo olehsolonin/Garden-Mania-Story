@@ -1,7 +1,6 @@
-.container {
-}
 .privacy-box {
   padding-top: 24px;
+  padding-bottom: 32px;
 }
 .privacy-back-box {
   padding-bottom: 24px;
@@ -11,7 +10,6 @@
   font-weight: 400;
   font-size: 16px;
   color: #000;
-  padding-bottom: 24px;
 }
 .privacy-title {
   font-family: 'Montserrat', sans-serif;
@@ -24,11 +22,41 @@
 .privacy-second-title {
   font-weight: 600;
   padding-bottom: 16px;
-  padding-top: 16px;
+  font-size: 14px;
 }
 .privacy-text {
   padding-bottom: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 14px;
 }
 .bold-text {
   font-weight: 500;
+}
+
+@media only screen and (min-width: 1200px) {
+  .privacy-box {
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+  .privacy-back-box {
+    padding-bottom: 12px;
+  }
+  .privacy-back {
+    font-size: 18px;
+  }
+  .privacy-title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #0099fa;
+    padding-bottom: 24px;
+  }
+  .privacy-second-title {
+    padding-bottom: 24px;
+    font-size: 18px;
+  }
+  .privacy-text {
+    padding-bottom: 24px;
+    font-size: 18px;
+  }
 }
