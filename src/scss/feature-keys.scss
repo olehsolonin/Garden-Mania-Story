@@ -32,28 +32,125 @@
   margin-bottom: 16px;
 }
 
-.feature-text {
-  margin-bottom: 16px;
-  text-align: center;
-}
+// .feature-text {
+//   margin-bottom: 16px;
+//   text-align: center;
+// }
 .brief-description {
-  text-align: center;
   margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
 }
 
-.feature-list {
+// .feature-list {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: row;
+//   gap: 8px;
+//   margin-bottom: 48px;
+// }
+
+// .list-items {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 400;
+//   font-size: 14px;
+//   text-transform: uppercase;
+//   color: #606060;
+// }
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Slider Wrapper */
+.slider-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 8px;
-  margin-bottom: 48px;
+  transition: transform 0.4s ease-in-out;
 }
 
-.list-items {
+/* Individual Slides */
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Image and Text Styling */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-text {
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+/* Buttons Styling */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Pagination Styling */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-number {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   color: #606060;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.pagination-number:hover {
+  opacity: 1;
+}
+
+.pagination-number.active {
+  font-weight: bold;
+  color: #000;
+  opacity: 1;
+}
+
+/* Swipe functionality for mobile */
+@media (max-width: 768px) {
+  .slider-btn {
+    display: none;
+  }
 }
