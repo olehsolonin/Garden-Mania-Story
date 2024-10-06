@@ -19,6 +19,7 @@
 }
 .footer-rights-box {
   padding-bottom: 16px;
+  min-width: 281px;
 }
 .footer-rights {
   text-align: center;
@@ -26,14 +27,12 @@
 
 .footer-menu-list,
 .footer-rights-box {
-    order: 0;
+  order: 0;
 }
 
 @media only screen and (min-width: 1200px) {
-  
   .footer {
     font-size: 16px;
-  
   }
   .footer-container {
     display: flex;
@@ -47,12 +46,12 @@
     padding-top: 36px;
     margin-bottom: 24px;
     color: #101010;
-    order: 2; 
+    order: 2;
   }
   .footer-rights-box {
     padding-top: 36px;
     margin-bottom: 24px;
-    color: #fff;
-    order: 1; 
+    order: 1;
+    min-width: none;
   }
 }
