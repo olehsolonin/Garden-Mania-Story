@@ -3,36 +3,118 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/Garden-Mania-Story/favicon.svg" />
+	<link rel="icon" type="image/svg+xml" href="/Garden-Mania-Story/assets/symbol-defs-278ca610.svg#icon-x16" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Vanilla App Template</title>
+	<title>Garden Mania Story</title>
 	
   <script type="module" crossorigin src="/Garden-Mania-Story/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/Garden-Mania-Story/assets/styles-ec9ad0a8.css">
+  <link rel="stylesheet" href="/Garden-Mania-Story/assets/styles-914ed195.css">
 </head>
 
 <body>
 	<header>
-		<header class="header">
-	<nav class="nav">
-		<ul class="nav-list">
-			<li class="nav-item">
-				<!-- <a href="./page-2.html" class="nav-link">Page 2</a> -->
-			</li>
+		<section class="container header-block">
+	<a href="https://play.google.com/store/apps/details?id=com.ezjoynetwork.gardenmaniastory&hl=en-US" target="_blank">
+		<!-- <button class="google-play-size"> -->
+		<svg class="google-play-size" width="24" height="24">
+			<use href="../img/svg/symbol-defs.svg#icon-google-play"></use>
+		</svg>
+		<!-- </button> -->
+	</a>
+	<h1 class="main-title">Garden Mania</h1>
+	<button class="icon-button" id="toggleBtn">
+		<svg class="google-play-size burger-mod" width="16" height="24">
+			<use href="../img/svg/symbol-defs.svg#icon-google-play"></use>
+		</svg>
+	</button>
+	<div class="modal-overlay" id="toggleModal">
+		<nav class="nav-modal">
+			<button type="button" class="closeBtn" id="closeBtn">X</button>
 
-			<li class="nav-item">
-				<!-- <a href="./page-3.html" class="nav-link">Page 3</a> -->
-			</li>
-		</ul>
-	</nav>
-</header>
-		<!-- ENOENT: no such file or directory, open '/home/runner/work/Garden-Mania-Story/Garden-Mania-Story/src/partials/menu.html' -->
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="#home" class="nav-link">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#feature-keys" class="nav-link">Feature Keys</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about-us" class="nav-link">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link">User Reviews</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- <script src="../main.js" type="module"></script> -->
+	</div>
+</section>
 	</header>
 	<main>
-		ENOENT: no such file or directory, open '/home/runner/work/Garden-Mania-Story/Garden-Mania-Story/src/partials/home.html'
+		<section id="home" class="container home-block">
+	<div class="home-wrap">
+		<div class="home-img-wrap">
+			<img class="home-img" src="../img/home/SamsungGalaxyS23-1x.png" alt="Garden-Mania-Story-photo">
+		</div>
+		<div class="frame-wrap">
+			<div class="garden-text">
+				<div class="home-garden-wrap">
+					<h2 class="home-title">Garden Mania Story</h2>
+					<p class="home-text">Grow, Harvest, and Win in the Ultimate Garden Adventure!</p>
+				</div>
+				<a href="https://play.google.com/store/apps/details?id=com.ezjoynetwork.gardenmaniastory&hl=en-US"
+					target="_blank">
+					<button type="button" class="home-button">
+						<svg class="home-img" width="204" height="60">
+							<use href="../img/svg/symbol-defs.svg#icon-Badge"></use>
+						</svg>
+						<!-- <img src="../img/home/Badge-1x.png" alt="Link to donwload"> -->
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+		<section id="feature-keys" class=" container feature-keys-block">
+	<p class="feature-numbers">01</p>
+	<h2 class="feature-title">FEATURE KEYS</h2>
+	<img class="feature-gallery" src="../img/feature-keys/Frame3-1x.png" alt="Match-3 Puzzle Fun">
+	<p class="feature-text">Match-3 Puzzle Fun</p>
+	<p class="brief-description">Solve puzzles by matching fruits, vegetables, and flowers.</p>
+	<ul class="feature-list">
+		<li class="list-items">1</li>
+		<li class="list-items">2</li>
+		<li class="list-items">3</li>
+		<li class="list-items">4</li>
+		<li class="list-items">5</li>
+		<li class="list-items">6</li>
+		<li class="list-items">7</li>
+	</ul>
+</section>
+		<section id="about-us" class="container about-us-block">
+	<div class="about-us-number">
+		<p class="block-number">02</p>
+	</div>
+	<h2 class="about-us-title">ABOUT US</h2>
+	<p class="about-us-text">Garden Mania Story is a captivating match-3 puzzle game where players solve puzzles and grow
+		their own virtual gardens. The game offers hundreds of fun and challenging levels, with seasonal updates and
+		special events to keep the game fresh. Suitable for players of all ages, Garden Mania Story combines
+		puzzle-solving with a charming gardening experience.
+	</p>
+	<div>
+		<iframe class="video" width="288" height="162" src="https://www.youtube.com/embed/ibbB_Pn5lrU"
+			title="YouTube video player" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen>
+		</iframe>
+	</div>
+
+</section>
 		
-		
-		ENOENT: no such file or directory, open '/home/runner/work/Garden-Mania-Story/Garden-Mania-Story/src/partials/gallery.html'
 		
 	</main>
 
@@ -51,6 +133,7 @@
 	</footer>
 
 	
+
 </body>
 
 </html>
