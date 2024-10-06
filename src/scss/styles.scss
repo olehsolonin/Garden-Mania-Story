@@ -9,7 +9,6 @@
 @import url('./privacy-policy.scss');
 @import url('./terms-of-use.scss');
 
-
 :root {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -31,14 +30,14 @@ html {
 }
 
 .container {
-  max-width: 320px;
+  min-width: 320px;
   padding: 0 16px 0 16px;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 1200px) {
-.container {
-max-width: 1200px;
-padding: 0 40px 0px 40px;
-}
+  .container {
+    min-width: 1200px;
+    padding: 0 40px 0px 40px;
+  }
 }
