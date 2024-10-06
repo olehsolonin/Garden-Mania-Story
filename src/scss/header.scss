@@ -14,12 +14,13 @@
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  max-width: 100%;
+  width: 288px;
   height: 60px;
   display: flex;
   flex-direction: row;
   gap: 36px;
   align-items: center;
+  justify-content: center;
   z-index: 1000;
   margin: 0 auto;
   background-color: #f8f8f8;
@@ -99,4 +100,17 @@
   font-weight: 400;
   font-size: 16px;
   color: #000;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    width: 1200px;
+    height: 86px;
+  }
 }

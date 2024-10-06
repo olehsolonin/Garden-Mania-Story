@@ -148,9 +148,33 @@
   opacity: 1;
 }
 
-/* Swipe functionality for mobile */
-@media (max-width: 768px) {
-  .slider-btn {
-    display: none;
+@media only screen and (min-width: 1200px) {
+  .feature-keys-block {
+    height: 619px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .feature-numbers {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 128px;
+    text-transform: uppercase;
+    color: #909090;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .feature-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #0099fa;
+    margin-top: 80px;
+    margin-bottom: 64px;
+    width: 588px;
+    height: 59px;
   }
 }
