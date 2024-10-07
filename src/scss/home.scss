@@ -88,6 +88,15 @@
   margin: 0;
 }
 
+.samsung-img {
+  transition: transform 1s ease-in-out; /* Плавна анімація */
+  perspective: 1000px;
+}
+
+.samsung-img:hover {
+  transform: scale(1.2) rotateX(15deg) rotateY(15deg); /* Збільшення і обертання */
+}
+
 @media only screen and (min-width: 1200px) {
   .home-block {
     height: 757px;
