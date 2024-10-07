@@ -2,6 +2,11 @@
 const modalControllerBtn = document.getElementById('toggleBtn');
 const toggleController = document.getElementById('toggleModal');
 const closeBtnController = document.getElementById('closeBtn'); // ID без точки
+const homeLink = document.getElementById('homeLink');
+const featureLink = document.getElementById('featureLink');
+const aboutLink = document.getElementById('aboutLink');
+const galleryLink = document.getElementById('galleryLink');
+const userLink = document.getElementById('userLink');
 
 // Универсальная функция-обработчик
 const handleClick = (event) => {
@@ -14,6 +19,11 @@ const handleClick = (event) => {
 // Добавляем обработчики на кнопки
 modalControllerBtn.addEventListener("click", handleClick);
 closeBtnController.addEventListener("click", handleClick); // Закрытие через другую кнопку
+homeLink.addEventListener("click", handleClick);
+featureLink.addEventListener("click", handleClick);
+aboutLink.addEventListener("click", handleClick);
+galleryLink.addEventListener("click", handleClick);
+userLink.addEventListener("click", handleClick);
 
 
 // -------------------------------
