@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "sass-loader": "^16.0.2",
+    "swiper": "^11.1.14",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
