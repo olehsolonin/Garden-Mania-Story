@@ -1,3 +1,5 @@
+import "./js/gallery.js";
+
 // Получаем кнопки и модальное окно
 const modalControllerBtn = document.getElementById('toggleBtn');
 const toggleController = document.getElementById('toggleModal');
