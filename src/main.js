@@ -1,4 +1,5 @@
-// Получаем кнопки и модальное окно
+import "./js/gallery.js";
+
 const modalControllerBtn = document.getElementById('toggleBtn');
 const toggleController = document.getElementById('toggleModal');
 const closeBtnController = document.getElementById('closeBtn'); // ID без точки
