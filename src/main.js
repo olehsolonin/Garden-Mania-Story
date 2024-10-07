@@ -1,3 +1,5 @@
+import './js/gallery.js';
+
 // Получаем кнопки и модальное окно
 const modalControllerBtn = document.getElementById('toggleBtn');
 const toggleController = document.getElementById('toggleModal');
@@ -9,11 +11,11 @@ const galleryLink = document.getElementById('galleryLink');
 const userLink = document.getElementById('userLink');
 
 // Универсальная функция-обработчик
-const handleClick = (event) => {
-	console.log(event.currentTarget);  // Показываем, какая кнопка вызвала событие
+const handleClick = event => {
+	console.log(event.currentTarget); // Показываем, какая кнопка вызвала событие
 
 	// Переключаем класс у модального окна
-	toggleController.classList.toggle("is-active");
+	toggleController.classList.toggle('is-active');
 };
 
 // Добавляем обработчики на кнопки
@@ -60,7 +62,8 @@ prevBtn.addEventListener('click', () => {
 // Update slider position based on current index
 function updateSliderPosition() {
 	const sliderWidth = document.querySelector('.slider-container').clientWidth;
-	sliderWrapper.style.transform = `translateX(-${currentIndex * sliderWidth}px)`;
+	sliderWrapper.style.transform = `translateX(-${currentIndex * sliderWidth
+		}px)`;
 	updateActivePagination();
 }
 
@@ -74,18 +77,20 @@ paginationNumbers.forEach((paginationNumber, index) => {
 
 // Update active pagination number style
 function updateActivePagination() {
-	paginationNumbers.forEach(paginationNumber => paginationNumber.classList.remove('active'));
+	paginationNumbers.forEach(paginationNumber =>
+		paginationNumber.classList.remove('active')
+	);
 	paginationNumbers[currentIndex].classList.add('active');
 }
 
 // Swipe functionality for mobile devices
 let startX = 0;
 
-sliderWrapper.addEventListener('touchstart', (e) => {
+sliderWrapper.addEventListener('touchstart', e => {
 	startX = e.touches[0].clientX;
 });
 
-sliderWrapper.addEventListener('touchend', (e) => {
+sliderWrapper.addEventListener('touchend', e => {
 	const endX = e.changedTouches[0].clientX;
 	if (startX > endX + 50) {
 		// Swiped left
@@ -107,4 +112,3 @@ sliderWrapper.addEventListener('touchend', (e) => {
 
 // Initialize first pagination number as active
 updateActivePagination();
-
