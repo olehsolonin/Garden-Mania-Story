@@ -2,6 +2,7 @@
   height: 519px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 48px;
 }
 
 .feature-numbers {
@@ -113,7 +114,9 @@
   color: white;
   border: none;
   padding: 10px;
-  cursor: pointer;
+  //   cursor: pointer;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .prev {
@@ -128,7 +131,7 @@
 .pagination-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  //   margin-bottom: 48px;
 }
 
 .pagination-number {
