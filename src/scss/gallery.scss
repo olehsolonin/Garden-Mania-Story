@@ -20,3 +20,28 @@
   color: #0099fa;
   margin-bottom: 32px;
 }
+.img-slider {
+  display: flex;
+  justify-content: center;
+  // padding: 120px 45px;
+}
+.img-slide{
+  max-width: 100%;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  color: #000;
+  // font-size: 
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .gallery-numbers {
+    font-size: 128px;
+    width: 154px;
+    height: 156px;
+  }
+  .gallery-title {
+    font-size: 48px;
+    margin-bottom: 64px;
+  }
+}
