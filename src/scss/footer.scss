@@ -3,11 +3,12 @@
   font-weight: 400;
   letter-spacing: -0.02em;
   font-size: 12px;
-  margin: 0 auto;
+  width: 100%;
   color: #000;
 }
 .footer-container {
   background-color: #0099fa;
+  margin: 0 auto;
 }
 .footer-menu-list {
   padding-top: 16px;
@@ -26,14 +27,12 @@
 
 .footer-menu-list,
 .footer-rights-box {
-    order: 0;
+  order: 0;
 }
 
 @media only screen and (min-width: 1200px) {
-  
   .footer {
     font-size: 16px;
-  
   }
   .footer-container {
     display: flex;
@@ -47,12 +46,11 @@
     padding-top: 36px;
     margin-bottom: 24px;
     color: #101010;
-    order: 2; 
+    order: 2;
   }
   .footer-rights-box {
     padding-top: 36px;
     margin-bottom: 24px;
-    color: #fff;
-    order: 1; 
+    order: 1;
   }
 }
