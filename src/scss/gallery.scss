@@ -25,23 +25,13 @@
 .gallery-numbers {
   order: 0;
 }
-.swiper {
-  margin-bottom: 45px;
-  display: flex;
-  justify-content: center;
-}
-.img-slider {
-  display: flex;
-  justify-content: center;
-  width: 319px;
+.swiper-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .img-slide {
-  max-width: 100%;
-}
-.swiper-slide {
-  display: flex;
-  justify-content: center;
+  width: calc(100% - 30px * 2);
 }
 
 .swiper-button-prev:after,
@@ -56,22 +46,28 @@
     font-size: 128px;
     width: 154px;
     height: 156px;
-	order: 2;
+    order: 2;
   }
   .gallery-title {
     font-size: 48px;
     margin-bottom: 0;
-	order: 1;
+    order: 1;
   }
-  .gallery-box{
-	display: flex;
+  .gallery-box {
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 64px;
   }
-  .swiper {
-    margin-bottom: 80px;
-  }
+  .swiper-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  
+.img-slide {
+  width: 100%;
+}
+
   .swiper-button-prev:after,
   .swiper-button-next:after {
     display: none;
