@@ -155,6 +155,7 @@
   .header-container {
     width: 1200px;
     height: 86px;
+    gap: 0;
   }
 
   .header-block {
@@ -173,6 +174,7 @@
   }
   .desktop-header-logo {
     display: block;
+    margin-right: 8px;
   }
 
   .google-play-size {
@@ -196,5 +198,16 @@
   }
   .nav-modal {
     display: none; /* Скрываем мобильное меню на десктопе */
+  }
+
+  .main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0099fa;
+    min-width: 170px;
+    height: 24px;
+    margin-right: 44px;
   }
 }
