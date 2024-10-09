@@ -40,4 +40,69 @@
 
 .video {
   border-radius: 15px;
+  width: 288px;
+  height: 162px;
+}
+.video-wrap {
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-us-block {
+    height: 581px;
+    position: relative;
+  }
+
+  .about-us-number {
+    width: 156px;
+    height: 156px;
+    margin-bottom: 47px;
+  }
+
+  .block-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 128px;
+    text-transform: uppercase;
+    color: #909090;
+  }
+
+  .about-us-title {
+    position: absolute;
+    top: 77px;
+    right: 40px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #0099fa;
+  }
+  .about-us-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+  }
+
+  .about-us-text {
+    width: 494px;
+    height: 216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    margin: 0;
+  }
+  .video {
+    width: 548px;
+    height: 301px;
+  }
 }

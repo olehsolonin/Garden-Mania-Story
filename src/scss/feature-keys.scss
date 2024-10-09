@@ -164,6 +164,7 @@
     flex-direction: column;
     position: relative;
   }
+
   .feature-numbers {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -173,6 +174,8 @@
     position: absolute;
     top: 0;
     right: 80px;
+    width: 129px;
+    height: 156px;
   }
 
   .feature-title {
@@ -209,6 +212,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
   .slide-text-wrap {
     display: flex;
