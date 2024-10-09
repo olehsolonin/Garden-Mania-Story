@@ -171,7 +171,7 @@
     color: #909090;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 80px;
   }
 
   .feature-title {
@@ -184,5 +184,10 @@
     margin-bottom: 64px;
     width: 588px;
     height: 59px;
+  }
+
+  .slider-container {
+    width: 940px;
+    height: 341px;
   }
 }

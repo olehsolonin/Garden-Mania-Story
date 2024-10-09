@@ -1,5 +1,6 @@
 .home-block {
-  height: 726px;
+  //   height: 726px;
+  height: 786px;
   display: flex;
   flex-direction: column;
 }
@@ -15,7 +16,7 @@
   height: 416px;
   object-fit: cover;
   margin: 0 auto;
-  margin-top: 48px;
+  margin-top: 108px;
   margin-bottom: 40px;
 }
 
@@ -99,7 +100,7 @@
 
 @media only screen and (min-width: 1200px) {
   .home-block {
-    height: 757px;
+    height: 843px;
     display: flex;
     flex-direction: row;
   }
@@ -113,6 +114,13 @@
   }
   .home-img-wrap {
     margin-left: 100px;
+    max-width: 327px;
+    height: 665px;
+  }
+
+  .home-button {
+    width: 250px;
+    height: 74px;
   }
 
   .home-garden-wrap {
