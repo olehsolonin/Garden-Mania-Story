@@ -1,29 +1,46 @@
 .header-container {
-  position: relative;
-  width: 100%;
-  min-width: 320px;
-  height: 60px;
-  margin: 0 auto;
-  padding: 0 16px;
-  background-color: #f8f8f8;
-}
-
-.header-block {
+  //   position: relative;
+  //   width: 100%;
+  //   min-width: 320px;
+  //   height: 60px;
+  //   margin: 0 auto;
+  //   padding: 0 16px;
+  //   background-color: #f8f8f8;
+  //   margin: 0;
+  //   display: flex;
+  //   justify-content: center; /* Центрирует элементы по горизонтали */
   position: fixed;
   top: 0;
-  left: 50%;
-  right: auto;
-  transform: translateX(-50%);
-  width: 320px;
+  left: 0;
+  right: 0;
+  width: 320px; /* Заданная ширина */
   height: 60px;
+  margin: 0 auto; /* Центрирует элемент */
   display: flex;
   flex-direction: row;
   gap: 36px;
   align-items: center;
   justify-content: center;
   z-index: 900;
-  margin: 0 auto;
   background-color: #f8f8f8;
+}
+
+.header-block {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 50%;
+  //   right: auto;
+  //   transform: translateX(-50%);
+  //   width: 320px;
+  //   height: 60px;
+  //   display: flex;
+  //   flex-direction: row;
+  //   gap: 36px;
+  //   align-items: center;
+  //   justify-content: center;
+  //   z-index: 900;
+  //   margin: 0 auto;
+  //   background-color: #f8f8f8;
 }
 
 .main-title {
@@ -143,8 +160,9 @@
   .header-block {
     height: 86px;
     width: 1200px;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    display: flex;
   }
 
   .desktop-nav {
