@@ -39,12 +39,53 @@ const paginationNumbers = document.querySelectorAll('.pagination-number');
 let currentIndex = 0;
 const totalSlides = slides.length;
 
-// Event listener for next button
+// Клонируем первый и последний слайды
+const firstSlideClone = slides[0].cloneNode(true);
+const lastSlideClone = slides[totalSlides - 1].cloneNode(true);
+
+// Добавляем их в DOM
+sliderWrapper.appendChild(firstSlideClone);
+sliderWrapper.insertBefore(lastSlideClone, slides[0]);
+
+// Обновляем количество слайдов после клонирования
+const allSlides = document.querySelectorAll('.slide');
+const totalAllSlides = allSlides.length;
+
+// Устанавливаем слайдер на первый реальный слайд
+sliderWrapper.style.transform = `translateX(-${100}%)`;
+
+// Функция для обновления позиции слайдера
+function updateSliderPosition() {
+	const sliderWidth = document.querySelector('.slider-container').clientWidth;
+	sliderWrapper.style.transition = 'transform 0.4s ease-in-out';
+	sliderWrapper.style.transform = `translateX(-${(currentIndex + 1) * sliderWidth}px)`;
+
+	// Если текущий индекс — последний слайд (клонированный первый), после анимации мгновенно переходим к первому реальному слайду
+	if (currentIndex === totalSlides) {
+		setTimeout(() => {
+			sliderWrapper.style.transition = 'none';
+			currentIndex = 0;
+			sliderWrapper.style.transform = `translateX(-${sliderWidth}px)`;
+		}, 400);
+	}
+
+	// Если текущий индекс — первый слайд (клонированный последний), после анимации мгновенно переходим к последнему реальному слайду
+	if (currentIndex === -1) {
+		setTimeout(() => {
+			sliderWrapper.style.transition = 'none';
+			currentIndex = totalSlides - 1;
+			sliderWrapper.style.transform = `translateX(-${totalSlides * sliderWidth}px)`;
+		}, 400);
+	}
+
+	updateActivePagination();
+}
+
 nextBtn.addEventListener('click', () => {
 	if (currentIndex < totalSlides - 1) {
 		currentIndex++;
 	} else {
-		currentIndex = 0;
+		currentIndex = 0;  // Цикл назад на перший слайд
 	}
 	updateSliderPosition();
 });
@@ -54,31 +95,25 @@ prevBtn.addEventListener('click', () => {
 	if (currentIndex > 0) {
 		currentIndex--;
 	} else {
-		currentIndex = totalSlides - 1;
+		currentIndex = totalSlides - 1;  // Цикл вперед на останній слайд
 	}
 	updateSliderPosition();
 });
 
-// Update slider position based on current index
-function updateSliderPosition() {
-	const sliderWidth = document.querySelector('.slider-container').clientWidth;
-	sliderWrapper.style.transform = `translateX(-${currentIndex * sliderWidth}px)`;
-	updateActivePagination();
+// Обновляем активный элемент пагинации
+function updateActivePagination() {
+	paginationNumbers.forEach(paginationNumber => paginationNumber.classList.remove('active'));
+	let activeIndex = currentIndex === totalSlides ? 0 : currentIndex;
+	paginationNumbers[activeIndex].classList.add('active');
 }
 
-// Add click event listeners to pagination numbers
+// Добавляем обработчики событий для пагинации
 paginationNumbers.forEach((paginationNumber, index) => {
 	paginationNumber.addEventListener('click', () => {
 		currentIndex = index;
 		updateSliderPosition();
 	});
 });
-
-// Update active pagination number style
-function updateActivePagination() {
-	paginationNumbers.forEach(paginationNumber => paginationNumber.classList.remove('active'));
-	paginationNumbers[currentIndex].classList.add('active');
-}
 
 // Swipe functionality for mobile devices
 let startX = 0;
@@ -90,23 +125,14 @@ sliderWrapper.addEventListener('touchstart', (e) => {
 sliderWrapper.addEventListener('touchend', (e) => {
 	const endX = e.changedTouches[0].clientX;
 	if (startX > endX + 50) {
-		// Swiped left
-		if (currentIndex < totalSlides - 1) {
-			currentIndex++;
-		} else {
-			currentIndex = 0;
-		}
+		// Свайп влево (на следующий слайд)
+		currentIndex++;
 	} else if (startX < endX - 50) {
-		// Swiped right
-		if (currentIndex > 0) {
-			currentIndex--;
-		} else {
-			currentIndex = totalSlides - 1;
-		}
+		// Свайп вправо (на предыдущий слайд)
+		currentIndex--;
 	}
 	updateSliderPosition();
 });
 
-// Initialize first pagination number as active
+// Инициализируем первый элемент пагинации как активный
 updateActivePagination();
-
