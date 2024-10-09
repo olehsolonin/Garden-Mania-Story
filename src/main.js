@@ -1,4 +1,5 @@
 import "./js/gallery.js";
+import "./js/animation-gallery.js";
 
 const modalControllerBtn = document.getElementById('toggleBtn');
 const toggleController = document.getElementById('toggleModal');
