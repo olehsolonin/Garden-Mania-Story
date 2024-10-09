@@ -6,7 +6,7 @@
   width: 100%;
   color: #000;
 }
-.footer-container {
+body .footer-container {
   background-color: #0099fa;
   margin: 0 auto;
 }
@@ -15,6 +15,7 @@
   margin-bottom: 8px;
   text-align: center;
 }
+
 .footer-nav-link {
   text-align: center;
 }
@@ -46,6 +47,7 @@
     padding-top: 36px;
     margin-bottom: 24px;
     color: #101010;
+    gap: 13px;
     order: 2;
   }
   .footer-rights-box {

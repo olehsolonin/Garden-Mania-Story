@@ -1,6 +1,12 @@
 .gallery-section {
   padding-bottom: 45px;
+  max-width: 320px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0 auto;
+  background-color: #fff; 
 }
+
 .gallery-numbers {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -28,6 +34,7 @@
 .gallery-numbers {
   order: 0;
 }
+
 .swiper-wrapper {
   padding-left: 30px;
   padding-right: 30px;
@@ -107,7 +114,11 @@
 @media only screen and (min-width: 1200px) {
   .gallery-section {
   padding-bottom: 80px;
+  max-width: 1200px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
+  
   .gallery-numbers {
     font-size: 128px;
     width: 154px;
