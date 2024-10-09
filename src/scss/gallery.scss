@@ -1,3 +1,6 @@
+.gallery-section {
+  padding-bottom: 45px;
+}
 .gallery-numbers {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -41,7 +44,65 @@
   --swiper-navigation-size: 32px;
 }
 
+// *********************************
+
+/* Анимация для появления слева */
+@keyframes tilt-in-fwd-left {
+  0% {
+    transform: translateX(-100%) rotateY(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+/* Анимация для появления сверху */
+@keyframes tilt-in-fwd-top {
+  0% {
+    transform: translateY(-100%) rotateX(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0);
+    opacity: 1;
+  }
+}
+
+/* Анимация для появления справа */
+@keyframes tilt-in-fwd-right {
+  0% {
+    transform: translateX(100%) rotateY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+/* Применение анимаций к слайдам */
+.swiper-slide:nth-child(1) {
+  animation: tilt-in-fwd-left 1s ease both;
+}
+
+.swiper-slide:nth-child(2) {
+  animation: tilt-in-fwd-top 1s ease both;
+}
+
+.swiper-slide:nth-child(3) {
+  animation: tilt-in-fwd-right 1s ease both;
+}
+
+// *********************************
+
+
+
 @media only screen and (min-width: 1200px) {
+  .gallery-section {
+  padding-bottom: 80px;
+}
   .gallery-numbers {
     font-size: 128px;
     width: 154px;
