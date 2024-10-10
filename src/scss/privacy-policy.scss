@@ -1,7 +1,3 @@
-.privacy-box {
-  padding-top: 24px;
-  padding-bottom: 32px;
-}
 .privacy-back-box {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -28,6 +24,9 @@
   padding-bottom: 16px;
   font-size: 14px;
 }
+.text-box {
+  padding-bottom: 48px;
+}
 .privacy-text {
   padding-bottom: 16px;
   line-height: 1.5;
@@ -39,12 +38,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .privacy-box {
-    padding-top: 32px;
-    padding-bottom: 8px;
-  }
   .privacy-back-box {
-    padding-top: 35px;
+    padding-top: 32px;
     padding-bottom: 16px;
   }
   .privacy-back {
@@ -59,6 +54,9 @@
   .privacy-second-title {
     padding-bottom: 24px;
     font-size: 18px;
+  }
+  .text-box {
+    padding-bottom: 32px;
   }
   .privacy-text {
     padding-bottom: 24px;
