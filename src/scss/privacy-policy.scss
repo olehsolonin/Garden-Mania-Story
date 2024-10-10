@@ -1,6 +1,10 @@
-.privacy-back-box {
+section.privacy-box {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 47px;
+}
+
+.privacy-back-box {
+  margin-bottom: 24px;
 }
 .privacy-back {
   display: flex;
@@ -17,7 +21,7 @@
   font-size: 24px;
   text-transform: uppercase;
   color: #0099fa;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .privacy-second-title {
   font-weight: 600;
@@ -28,19 +32,27 @@
   padding-bottom: 48px;
 }
 .privacy-text {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   line-height: 1.5;
   font-weight: 400;
   font-size: 14px;
 }
+.privacy-text-mod {
+  margin: 0;
+}
+
 .bold-text {
   font-weight: 500;
 }
 
 @media only screen and (min-width: 1200px) {
-  .privacy-back-box {
+  section.privacy-box {
     padding-top: 32px;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
+  }
+
+  .privacy-back-box {
+    margin-bottom: 16px;
   }
   .privacy-back {
     font-size: 18px;
@@ -49,7 +61,10 @@
     font-weight: 700;
     font-size: 48px;
     color: #0099fa;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
+    width: 588px;
+    height: 59px;
+    line-height: 1.2;
   }
   .privacy-second-title {
     padding-bottom: 24px;
@@ -59,7 +74,7 @@
     padding-bottom: 32px;
   }
   .privacy-text {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 18px;
   }
 }
