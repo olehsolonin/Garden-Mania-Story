@@ -1,10 +1,10 @@
-.terms-box {
+section.terms-box {
   padding-top: 24px;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
 }
 .terms-back-box {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  //   padding-top: 24px;
+  margin-bottom: 24px;
 }
 .terms-back {
   display: flex;
@@ -21,11 +21,11 @@
   font-size: 24px;
   text-transform: uppercase;
   color: #0099fa;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .terms-second-title {
   font-weight: 600;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   font-size: 14px;
 }
 .terms-text {
@@ -34,15 +34,17 @@
   font-weight: 400;
   font-size: 14px;
 }
+.mod-term-text {
+  padding: 0;
+}
 
 @media only screen and (min-width: 1200px) {
-  .terms-box {
+  section.terms-box {
     padding-top: 32px;
-    padding-bottom: 8px;
+    padding-bottom: 37px;
   }
   .terms-back-box {
-    padding-top: 32px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
   .terms-back {
     font-size: 18px;
@@ -51,10 +53,13 @@
     font-weight: 700;
     font-size: 48px;
     color: #0099fa;
-    padding-bottom: 24px;
+    width: 588px;
+    height: 59px;
+    line-height: 1.2;
+    margin-bottom: 19px;
   }
   .terms-second-title {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 18px;
   }
   .text-box {
@@ -63,5 +68,8 @@
   .terms-text {
     padding-bottom: 24px;
     font-size: 18px;
+  }
+  .mod-term-text {
+    padding: 0;
   }
 }
