@@ -29,13 +29,10 @@ section.terms-box {
   font-size: 14px;
 }
 .terms-text {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   line-height: 1.5;
   font-weight: 400;
   font-size: 14px;
-}
-.mod-term-text {
-  padding: 0;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -62,14 +59,9 @@ section.terms-box {
     margin-bottom: 24px;
     font-size: 18px;
   }
-  .text-box {
-    padding-bottom: 32px;
-  }
+
   .terms-text {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 18px;
-  }
-  .mod-term-text {
-    padding: 0;
   }
 }
